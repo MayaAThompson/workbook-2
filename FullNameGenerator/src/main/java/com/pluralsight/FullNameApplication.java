@@ -27,7 +27,7 @@ public class FullNameApplication {
             fullName = firstName + " " + middleName + " " + lastName + ", " + suffix;
         }
 
-        System.out.println("Fullname: " + fullName);
+        System.out.println("Full name: " + fullName);
     }
 
     static String nameGet(String message) {
