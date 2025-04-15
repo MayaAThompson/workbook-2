@@ -25,14 +25,11 @@ public class AddressBuilder {
     }
     static String getAddress(String message) {
         StringBuilder address = new StringBuilder();
-        String streetNumber = messageAndResponse(message + "Street: ");
+        address.append(messageAndResponse(message + "Street: ")).append("\n");
         address.append(messageAndResponse(message + "City: ")).append(", ");
-        //address.append(", ");
-        address.append(messageAndResponse(message + "State: ").toUpperCase());
-        address.append(" ");
+        address.append(messageAndResponse(message + "State: ").toUpperCase()).append(" ");
         address.append(messageAndResponse(message + "Zip: "));
-        String addressRest = address.toString();
-        return (streetNumber + "\n" + addressRest);
+        return address.toString();
 
 
     }
