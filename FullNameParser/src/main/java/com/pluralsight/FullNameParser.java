@@ -8,7 +8,7 @@ public class FullNameParser {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("what is your full name?\nEnter here: ");
-        String fullName = scanner.nextLine();
+        String fullName = scanner.nextLine().trim();
 
         String[] parsedName = fullName.split(" ");
         String firstName = parsedName[0];
