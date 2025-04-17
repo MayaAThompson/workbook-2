@@ -13,9 +13,9 @@ public class CellPhoneApplication {
 
         System.out.println();
         cell2.dial(cell1.getPhoneNumber());
-        System.out.println(Utils.messageAndResponse(""));
-        cell1.dial(cell2.getPhoneNumber());
-        System.out.println(Utils.messageAndResponse(""));
+        Utils.pauseReturn();
+        cell1.dial(cell2);
+        Utils.pauseReturn();
     }
 
 }
