@@ -16,6 +16,9 @@ public class TestStatistics {
         int lowScore = Operations.lowScore(scores);
         System.out.println("Low Score: " + lowScore);
 
+        int median = Operations.median(scores);
+        System.out.println("Median: " + median);
+
     }
 
 

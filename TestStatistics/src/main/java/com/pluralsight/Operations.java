@@ -27,4 +27,20 @@ public class Operations {
         return score[0];
 
     }
+
+    public static int median(int[] score) {
+
+        Arrays.sort(score);
+        int median = 0;
+        if(score.length % 2 == 0) {
+            int middle = score.length / 2;
+            median = (score[middle] + (score[middle] - 1)) /2;
+        }
+        if(score.length % 2 != 0) {
+            int middle = score.length /2;
+            median = score[middle];
+        }
+
+        return median;
+    }
 }
